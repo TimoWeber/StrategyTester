@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Strategy Tester</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		<h1>Strategy Results</h1>		
+		<p th:text="'Total profit: ' + ${profit}" />
+		<p th:text="'Number of bars: ' + ${numberOfBars}" />
+		<p th:text="'Average profit (per bar): ' + ${averageProfit}" />
+		<p th:text="'Number of trades: ' + ${numberOfTrades}" />
+		<p th:text="'Profitable trades ratio: ' + ${profitableTradesRatio}" />
+		<p th:text="'Maximum drawdown: ' + ${maxDrawdown}" />
+		<p th:text="'Reward-risk ratio: ' + ${rewardRiskRatio}" />
+		<p th:text="'Total transaction cost (from $1000): ' + ${totalTransactionCost}" />
+		<p th:text="'Buy-and-hold: ' + ${buyAndHold}" />
+		<p th:text="'Custom strategy profit vs buy-and-hold strategy profit: ' + ${customVsbuyAndHold}" />
+	</body>
+</html>
